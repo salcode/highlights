@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Highlights</title>
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+	</head>
+	<body>
+		<h1><a href="https://github.com/salcode/highlights">Highlights</a></h1>
+
+		<form method="post">
+			<textarea id="mytextarea"></textarea>
+		</form>
+
+		<script src="tinymce/js/tinymce/tinymce.min.js"></script>
+		<script src="tinymce/js/tinymce/plugins/textcolor/plugin.min.js"></script>
+		<script>
+			tinymce.init({
+				content_style: 'body { font-size: 30px; }',
+				height: 600,
+				plugins: [ 'textcolor' ],
+				selector: '#mytextarea',
+				toolbar: [ 'forecolor backcolor | removeformat' ],
+menubar: false
+			});
+		</script>
+	</body>
+</html>
